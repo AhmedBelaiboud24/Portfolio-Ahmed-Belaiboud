@@ -1,0 +1,125 @@
+.A-propos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.img-ahmed{
+    width: 350px;
+    height: auto;
+    margin-right: 80px;
+    margin-top: 80px;
+}
+.presentation {
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-top: 60px;
+}
+
+.presentation h1 {
+    font-size: 48px; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; 
+    color: var(--titre-color);
+}
+
+.presentation h2 {
+    font-size: 36px; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500; 
+    color: var(--sous-titre-color);
+    display: flex;
+    align-items: start;
+    padding-bottom: 10px;
+}
+.presentation .desc{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color:  var( --text-color);
+}
+.Btn-cta{
+    margin-left: 135px;
+    margin-top: 25px;
+}
+@media (max-width: 768px) {
+    .A-propos{
+        display: flex;
+        flex-direction: column;
+    }
+    .A-propos .desc{
+        margin-right: px;
+        font-size: 12px;
+    }
+    .A-propos h1{
+        font-size: 35px;
+        align-items: center;
+    }
+    .A-propos h2{
+        font-size: 25px;
+        align-items: center;
+        margin-right: 30px;
+    }
+    .presentation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 30px;
+        margin-left: 80px;
+    }
+    .img-ahmed{
+        width: 200px;
+        height: auto;
+        margin-left: 90px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .Btn-cta{
+        width: 80px;
+        height: 30px;
+        margin-left: 225px;
+    }
+}
+@media (max-width: 480px) {
+    .Btn-cta{
+        width: 80px;
+        height: 30px;
+        margin-left: 100px;
+    }
+    .img-ahmed{
+        width: 200px;
+        height: auto;
+        margin-left: 120px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .A-propos h1{
+        font-size: 35px;
+        align-items: center;
+        margin-right: 50px;
+    }
+    .A-propos h2{
+        font-size: 25px;
+        align-items: center;
+        margin-right: 50px;
+    }
+}
+@media (max-width: 375px) {
+    .Btn-cta{
+        width: 50px;
+        height: 30px;
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+    .A-propos h2{
+        font-size: 25px;
+        align-items: center;
+        margin-right: 40px;
+    }
+    .A-propos h1{
+        font-size: 35px;
+        align-items: center;
+        margin-left: 10px;
+    }
+}

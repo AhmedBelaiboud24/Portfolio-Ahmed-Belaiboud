@@ -1,0 +1,156 @@
+/* Navbar styles for desktop */
+.navbar {
+    border-radius: 12px;
+    background: var(--background-color);
+    border: 1px solid var(--text-color);
+    backdrop-filter: blur(16px) saturate(120%);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 80px;
+    position: relative;
+  }
+  
+  /* Hide nav links on mobile */
+  .navbar .navLinks {
+    display: flex;
+    gap: 15px;
+  }
+  
+  /* Theme toggle style */
+  .themeToggle {
+    margin-right: 30px;
+    margin-left: 40px;
+  }
+  
+  /* Nav links styling */
+  .navbar a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: var(--text-color);
+    position: relative;
+    padding-bottom: 5px;
+  }
+  
+  .navbar a:hover::after,
+  .navbar a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--text-color);
+  }
+  
+  .navbar button{
+    display: none;
+  }
+  
+  
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .navbar .navLinks {
+      display: none; /* Hide nav links */
+    }
+  
+    .navbar button {
+      display: block; /* Show hamburger menu button on mobile */
+    }
+    /* Button for hamburger menu */
+  .menuIcon {
+    display: none; /* Hidden by default */
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 20px; /* Adjust position as needed */
+    right: 20px; /* Adjust position as needed */
+    transform: translateY(-40%);
+    color: var(--text-color) !important; /* Color of the button */
+    background: var(--background-color); /* Background color of the button */
+    border: 2px solid var(--text-color); /* Border color */
+    border-radius: 50%; /* Circular button */
+    padding: 10px; /* Padding inside the button */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  /* Side menu styles */
+  .sideMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background: var(--background-color);
+    border-left: 1px solid var(--text-color);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 1000; /* Make sure menu is on top */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  }
+  
+  .sideMenu a {
+    margin-bottom: 20px;
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    position: relative;
+  }
+  .sideMenu a:hover::after,
+  .sideMenu a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--text-color);
+    width: 40%;
+  }
+  }
+  @media (max-width: 480px){
+    .sideMenu a {
+      margin-bottom: 20px;
+      color: var(--text-color);
+      font-family: 'Poppins', sans-serif;
+      text-decoration: none;
+      position: relative;
+    }
+    .sideMenu a:hover::after,
+  .sideMenu a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--text-color);
+    width: 40%;
+  }
+  }
+  @media (max-width: 375px){
+    .themeToggle {
+      margin-right: 15px;
+      margin-left: 10px;
+    }
+    .sideMenu a {
+      margin-bottom: 20px;
+      color: var(--text-color);
+      font-family: 'Poppins', sans-serif;
+      text-decoration: none;
+      position: relative;
+    }
+    .sideMenu a:hover::after,
+  .sideMenu a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--text-color);
+    width: 40%;
+  }
+  }

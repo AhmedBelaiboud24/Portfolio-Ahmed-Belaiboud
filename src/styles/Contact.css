@@ -1,0 +1,106 @@
+.Conteneur-contact {
+    padding: 20px;
+    background-color: var(--section-background-color);
+    color: #fff;
+    display: flex;
+    align-items: center; /* Centre verticalement l'illustration et le formulaire */
+    justify-content: space-between; /* Espace entre le formulaire et l'image */
+    padding: 20px;
+}
+
+.Conteneur-contact h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.formulaire {
+    width: 100%;
+}
+
+.formulaire .MuiOutlinedInput-root {
+    background-color: var(--section-background-color);
+    color: #ffffff;
+}
+
+.formulaire .MuiInputLabel-root {
+    color: #ffffff;
+}
+
+.formulaire .MuiInputLabel-root.Mui-focused {
+    color: #87cefa;
+}
+
+/* Styles pour les champs autofilled */
+.formulaire input:-webkit-autofill,
+.formulaire textarea:-webkit-autofill {
+    background-color: var(--section-background-color) !important; 
+    color: #ffffff !important; 
+    -webkit-text-fill-color: #ffffff !important; 
+    -webkit-box-shadow: 0 0 0px 1000px var(--section-background-color) inset !important;
+    box-shadow: 0 0 0px 1000px var(--section-background-color) inset !important; 
+}
+
+/* Styles pour les labels des champs autofilled */
+.formulaire input:-webkit-autofill ~ .MuiInputLabel-root,
+.formulaire textarea:-webkit-autofill ~ .MuiInputLabel-root {
+    color: #ffffff !important;
+}
+
+/* Styles pour les bordures des champs de formulaire */
+.formulaire .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-color: #FFFFFF;
+}
+
+.formulaire .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: var(--border-form);
+}
+
+.formulaire .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #00bfff;
+}
+.footCont h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 2em;
+    color: var(--sous-titre-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.Conteneur-contact p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-bottom: 100px;
+    color: var(--text-color);
+}
+
+
+.contact-rapide img {
+    max-width: 100%; /* Ajuste la taille de l'illustration, à adapter selon tes besoins */
+    height: auto;
+    padding-top: 50px;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+.form-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.form-container.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}

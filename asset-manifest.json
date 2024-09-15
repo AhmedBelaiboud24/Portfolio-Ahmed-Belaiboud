@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio-Ahmed-Belaiboud/static/css/main.be3e1a2c.css",
+    "main.css": "/Portfolio-Ahmed-Belaiboud/static/css/main.d1ee92e9.css",
     "main.js": "/Portfolio-Ahmed-Belaiboud/static/js/main.0fa09865.js",
     "static/js/453.4302eacc.chunk.js": "/Portfolio-Ahmed-Belaiboud/static/js/453.4302eacc.chunk.js",
     "static/media/Eclat-du-gout.png": "/Portfolio-Ahmed-Belaiboud/static/media/Eclat-du-gout.184706b088233dd5adaf.png",
@@ -50,12 +50,12 @@
     "static/media/undraw_contact_us_re_4qqt.svg": "/Portfolio-Ahmed-Belaiboud/static/media/undraw_contact_us_re_4qqt.af202a9f8d00030171031152e21aa414.svg",
     "static/media/react.png": "/Portfolio-Ahmed-Belaiboud/static/media/react.5d4b9792495b077aa91d.png",
     "index.html": "/Portfolio-Ahmed-Belaiboud/index.html",
-    "main.be3e1a2c.css.map": "/Portfolio-Ahmed-Belaiboud/static/css/main.be3e1a2c.css.map",
+    "main.d1ee92e9.css.map": "/Portfolio-Ahmed-Belaiboud/static/css/main.d1ee92e9.css.map",
     "main.0fa09865.js.map": "/Portfolio-Ahmed-Belaiboud/static/js/main.0fa09865.js.map",
     "453.4302eacc.chunk.js.map": "/Portfolio-Ahmed-Belaiboud/static/js/453.4302eacc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.be3e1a2c.css",
+    "static/css/main.d1ee92e9.css",
     "static/js/main.0fa09865.js"
   ]
 }
